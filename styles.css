@@ -32,12 +32,9 @@ body {
 
 #dataTable td, #dataTable th {
     border: 1px solid #dddddd;
+    background-color: #ffffff;
     padding: 8px;
     text-align: left;
-}
-
-#dataTable th {
-    background-color: #f2f2f2;
 }
 
 .table-wrapper {
@@ -45,19 +42,12 @@ body {
     border-radius: 5px;
     overflow: auto;
     max-height: 300px;
-    width: 300px; /* テーブルラッパーの幅を300pxに設定 */
-}
-
-#dataTable {
-    width: calc(100% - 100px); /* テーブルの幅を100px減算 */
-    border-collapse: collapse;
 }
 
 #dataTable th:first-child,
 #dataTable td:first-child {
-    width: 100px; /* 最初の列の幅を100pxに設定 */
+    width: 50px; /* 最初の列の幅を100pxに設定 */
 }
-
 
 footer {
     margin-top: 20px;
