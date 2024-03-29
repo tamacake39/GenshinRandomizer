@@ -4,11 +4,15 @@ body {
 }
 
 .container {
-    max-width: 800px; /* 幅の制限 */
+    max-width: 600px; /* 幅の制限 */
     margin: 0 auto; /* 中央揃え */
     padding: 20px;
     display: flex;
     align-items: center;
+}
+
+.content {
+    flex: 1; /* 余白を埋める */
 }
 
 .executer {
@@ -18,10 +22,6 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.content {
-    margin-left: 20px; /* ボタンからの間隔 */
 }
 
 #dataTable {
