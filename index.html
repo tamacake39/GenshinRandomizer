@@ -19,20 +19,27 @@
             <p>原神の暇つぶしの補助をします。</p>
             <p>最終更新：原神 ver. 4.5</p>
             
-            <!--
-            <div>
-                <input type="radio" id="easy" name="level" value="easy" checked />
-                <label for="easy">通常</label>
-            </div>
-            <div>
-                <input type="radio" id="medium" name="level" value="medium" />
-                <label for="medium">中間</label>
-            </div>
-            <div>
-                <input type="radio" id="hard" name="level" value="hard" />
-                <label for="hard">地獄</label>
-            </div>
-            -->
+            <details>
+                <summary>詳細設定</summary>
+                <div class="details-content">
+                    <div>
+                        <input type="radio" id="charactor" name="level" value="charactor" checked />
+                        <label for="charactor">キャラ縛り</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="element" name="level" value="element" />
+                        <label for="element">元素縛り</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="features" name="level" value="features" />
+                        <label for="features">特徴縛り</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="elementLimit" name="level" value="elementLimit" checked/>
+                        <label for="elementLimit">必須元素を考慮（e.g. 無相の草）</label>
+                    </div>
+                </div>
+            </details>
 
             <button class="executer">ランダマイズ！</button>
             

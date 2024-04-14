@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
 }
 
 .container {
@@ -15,6 +15,25 @@ body {
     flex: 1; /* 余白を埋める */
 }
 
+/* アコーディオンのスタイル */
+details {
+    border: 1px solid #ccc;
+    margin: 20px 0px;
+}
+details summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #ddd;
+}
+details input {
+    margin: 10px 20px;
+}
+details label,
+details input {
+    cursor: pointer;
+}
+
 .executer {
     padding: 10px 20px;
     background-color: #007bff;
@@ -25,12 +44,13 @@ body {
 }
 
 #dataTable {
-    margin: 20px 0;
+    margin: 20px 0px;
     border-collapse: collapse;
     width: 100%;
 }
 
-#dataTable td, #dataTable th {
+#dataTable td,
+#dataTable th {
     border: 1px solid #dddddd;
     background-color: #ffffff;
     padding: 8px;
