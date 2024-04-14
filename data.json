@@ -1,112 +1,653 @@
 {
     "characters": [
-        "風主人公",
-        "岩主人公",
-        "雷主人公",
-        "草主人公",
-        "水主人公",
-        "アーロイ",
-        "ジン",
-        "アルベド",
-        "ディルック",
-        "エウルア",
-        "クレー",
-        "モナ",
-        "ウェンティ",
-        "刻晴",
-        "七七",
-        "胡桃",
-        "魈",
-        "申鶴",
-        "鍾離",
-        "白朮",
-        "夜蘭",
-        "甘雨",
-        "神里綾人",
-        "楓原万葉",
-        "神里綾華",
-        "荒瀧一斗",
-        "雷電将軍",
-        "珊瑚宮心海",
-        "八重神子",
-        "宵宮",
-        "ニィロウ",
-        "アルハイゼン",
-        "ディシア",
-        "セノ",
-        "放浪者",
-        "ナヒーダ",
-        "ティナリ",
-        "リネ",
-        "ヌヴィレット",
-        "リオセスリ",
-        "フリーナ",
-        "タルタリヤ",
-        "ナヴィア",
-        "閑雲",
-        "千織",
-        "ベネット",
-        "ガイア",
-        "レザー",
-        "ノエル",
-        "ロサリア",
-        "ミカ",
-        "バーバラ",
-        "スクロース",
-        "リサ",
-        "アンバー",
-        "フィッシュル",
-        "ディオナ",
-        "行秋",
-        "辛炎",
-        "北斗",
-        "重雲",
-        "香菱",
-        "ヨォーヨ",
-        "雲菫",
-        "煙緋",
-        "凝光",
-        "久岐忍",
-        "早柚",
-        "トーマ",
-        "鹿野院平蔵",
-        "九条裟羅",
-        "ゴロー",
-        "綺良々",
-        "レイラ",
-        "ドリー",
-        "カーヴェ",
-        "キャンディス",
-        "ファルザン",
-        "コレイ",
-        "リネット",
-        "フレミネ",
-        "シャルロット",
-        "シュヴルーズ",
-        "嘉明"
+        {
+            "name": "七七",
+            "elements": "氷",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/1"
+        },
+        {
+            "name": "リサ",
+            "elements": "雷",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2"
+        },
+        {
+            "name": "九条裟羅",
+            "elements": "雷",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/3"
+        },
+        {
+            "name": "雲菫",
+            "elements": "岩",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/4"
+        },
+        {
+            "name": "ゴロー",
+            "elements": "岩",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/5"
+        },
+        {
+            "name": "エウルア",
+            "elements": "氷",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/6"
+        },
+        {
+            "name": "八重神子",
+            "elements": "雷",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/7"
+        },
+        {
+            "name": "凝光",
+            "elements": "岩",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/8"
+        },
+        {
+            "name": "ガイア",
+            "elements": "氷",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/9"
+        },
+        {
+            "name": "刻晴",
+            "elements": "雷",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/10"
+        },
+        {
+            "name": "北斗",
+            "elements": "雷",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/11"
+        },
+        {
+            "name": "クレー",
+            "elements": "炎",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/12"
+        },
+        {
+            "name": "アーロイ",
+            "elements": "氷",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/13"
+        },
+        {
+            "name": "アンバー",
+            "elements": "炎",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/14"
+        },
+        {
+            "name": "宵宮",
+            "elements": "炎",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/15"
+        },
+        {
+            "name": "トーマ",
+            "elements": "炎",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/16"
+        },
+        {
+            "name": "岩主人公",
+            "elements": "岩",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/17"
+        },
+        {
+            "name": "雷主人公",
+            "elements": "雷",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/18"
+        },
+        {
+            "name": "風主人公",
+            "elements": "風",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/19"
+        },
+        {
+            "name": "早柚",
+            "elements": "風",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/21"
+        },
+        {
+            "name": "楓原万葉",
+            "elements": "風",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/22"
+        },
+        {
+            "name": "ウェンティ",
+            "elements": "風",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/23"
+        },
+        {
+            "name": "煙緋",
+            "elements": "炎",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/24"
+        },
+        {
+            "name": "珊瑚宮心海",
+            "elements": "水",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/25"
+        },
+        {
+            "name": "ベネット",
+            "elements": "炎",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/26"
+        },
+        {
+            "name": "ジン",
+            "elements": "風",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/27"
+        },
+        {
+            "name": "甘雨",
+            "elements": "氷",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/28"
+        },
+        {
+            "name": "申鶴",
+            "elements": "氷",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/29"
+        },
+        {
+            "name": "スクロース",
+            "elements": "風",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/30"
+        },
+        {
+            "name": "神里綾人",
+            "elements": "水",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/31"
+        },
+        {
+            "name": "神里綾華",
+            "elements": "氷",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/32"
+        },
+        {
+            "name": "ロサリア",
+            "elements": "氷",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/33"
+        },
+        {
+            "name": "胡桃",
+            "elements": "炎",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/34"
+        },
+        {
+            "name": "バーバラ",
+            "elements": "水",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/35"
+        },
+        {
+            "name": "荒瀧一斗",
+            "elements": "岩",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/36"
+        },
+        {
+            "name": "モナ",
+            "elements": "水",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/37"
+        },
+        {
+            "name": "フィッシュル",
+            "elements": "雷",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/38"
+        },
+        {
+            "name": "行秋",
+            "elements": "水",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/39"
+        },
+        {
+            "name": "ノエル",
+            "elements": "岩",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/40"
+        },
+        {
+            "name": "辛炎",
+            "elements": "炎",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/41"
+        },
+        {
+            "name": "タルタリヤ",
+            "elements": "水",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/42"
+        },
+        {
+            "name": "ディルック",
+            "elements": "炎",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/43"
+        },
+        {
+            "name": "ディオナ",
+            "elements": "氷",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/44"
+        },
+        {
+            "name": "重雲",
+            "elements": "氷",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/45"
+        },
+        {
+            "name": "鍾離",
+            "elements": "岩",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/46"
+        },
+        {
+            "name": "アルベド",
+            "elements": "岩",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/47"
+        },
+        {
+            "name": "レザー",
+            "elements": "雷",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/48"
+        },
+        {
+            "name": "雷電将軍",
+            "elements": "雷",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/49"
+        },
+        {
+            "name": "香菱",
+            "elements": "炎",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/50"
+        },
+        {
+            "name": "魈",
+            "elements": "風",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/51"
+        },
+        {
+            "name": "夜蘭",
+            "elements": "水",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2252"
+        },
+        {
+            "name": "久岐忍",
+            "elements": "雷",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2256"
+        },
+        {
+            "name": "鹿野院平蔵",
+            "elements": "風",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2263"
+        },
+        {
+            "name": "ティナリ",
+            "elements": "草",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2265"
+        },
+        {
+            "name": "コレイ",
+            "elements": "草",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2268"
+        },
+        {
+            "name": "ドリー",
+            "elements": "雷",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2269"
+        },
+        {
+            "name": "草主人公",
+            "elements": "草",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2674"
+        },
+        {
+            "name": "ニィロウ",
+            "elements": "水",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2812"
+        },
+        {
+            "name": "セノ",
+            "elements": "雷",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2813"
+        },
+        {
+            "name": "キャンディス",
+            "elements": "水",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2815"
+        },
+        {
+            "name": "ナヒーダ",
+            "elements": "草",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2850"
+        },
+        {
+            "name": "レイラ",
+            "elements": "氷",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2859"
+        },
+        {
+            "name": "ファルザン",
+            "elements": "風",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2967"
+        },
+        {
+            "name": "放浪者",
+            "elements": "風",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/2968"
+        },
+        {
+            "name": "ヨォーヨ",
+            "elements": "草",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/3335"
+        },
+        {
+            "name": "アルハイゼン",
+            "elements": "草",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/3336"
+        },
+        {
+            "name": "ミカ",
+            "elements": "氷",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/3462"
+        },
+        {
+            "name": "ディシア",
+            "elements": "炎",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/3463"
+        },
+        {
+            "name": "カーヴェ",
+            "elements": "草",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/3608"
+        },
+        {
+            "name": "白朮",
+            "elements": "草",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/3609"
+        },
+        {
+            "name": "綺良々",
+            "elements": "草",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/3719"
+        },
+        {
+            "name": "リネット",
+            "elements": "風",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/3962"
+        },
+        {
+            "name": "リネ",
+            "elements": "炎",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/3963"
+        },
+        {
+            "name": "フレミネ",
+            "elements": "氷",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/3964"
+        },
+        {
+            "name": "水主人公",
+            "elements": "水",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/3997"
+        },
+        {
+            "name": "リオセスリ",
+            "elements": "氷",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/4022"
+        },
+        {
+            "name": "ヌヴィレット",
+            "elements": "水",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/4023"
+        },
+        {
+            "name": "フリーナ",
+            "elements": "水",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/4376"
+        },
+        {
+            "name": "シャルロット",
+            "elements": "氷",
+            "weapons": "法器",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/4377"
+        },
+        {
+            "name": "ナヴィア",
+            "elements": "岩",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/4576"
+        },
+        {
+            "name": "シュヴルーズ",
+            "elements": "炎",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/4577"
+        },
+        {
+            "name": "閑雲",
+            "elements": "風",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/4774"
+        },
+        {
+            "name": "嘉明",
+            "elements": "炎",
+            "weapons": "大剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/4775"
+        },
+        {
+            "name": "千織",
+            "elements": "岩",
+            "weapons": "片手剣",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/4946"
+        },
+        {
+            "name": "アルレッキーノ",
+            "elements": "炎",
+            "weapons": "長柄",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/5149"
+        }
+    ],
+    "elements": ["炎", "水", "氷", "雷", "風", "岩", "草"],
+    "features": [
+        "モンド勢",
+        "璃月勢",
+        "稲妻勢",
+        "スメール勢",
+        "フォンテーヌ勢",
+        "片手剣",
+        "両手剣",
+        "弓",
+        "法器",
+        "長柄",
+        "突破ステ会心率",
+        "突破ステ会心ダメ",
+        "突破ステ熟知",
+        "突破ステ元チャ",
+        "突破ステHP",
+        "突破ステ治癒バフ",
+        "CT短縮持ち（凸効果含む）",
+        "突破ステ攻撃力",
+        "突破ステ防御力",
+        "突破ステ炎バフ",
+        "突破ステ水バフ",
+        "突破ステ草バフ",
+        "自由だが聖遺物なし",
+        "突破ステ雷バフ",
+        "突破ステ氷バフ",
+        "突破ステ風バフ",
+        "突破ステ岩バフ",
+        "主人公",
+        "回復能力がある",
+        "兄弟がいる",
+        "姉妹がいる",
+        "今アイコンにしている",
+        "天賦素材が月木日",
+        "天賦素材が火金日",
+        "天賦素材が水土日",
+        "特産品が栽培できる",
+        "特産品が栽培できない",
+        "元素エネルギー回復可能(凸効果含む)",
+        "推し",
+        "天賦本合成ボーナス持ち",
+        "武器素材ボーナス持ち",
+        "敵素材合成ボーナス持ち",
+        "調度品ボーナス持ち",
+        "鍛造or武器強化ボーナス持ち",
+        "料理ボーナス持ち",
+        "探索派遣ボーナス持ち",
+        "特産表示天賦持ち",
+        "スタミナ軽減天賦持ち",
+        "長身男性",
+        "ショタ",
+        "長身女性",
+        "少女体型",
+        "ロリ",
+        "人外",
+        "500歳以上",
+        "回復・シールド能力がない",
+        "別衣装持ち",
+        "エンチャント持ち",
+        "髪を結んでいる",
+        "魔神任務に登場しない",
+        "スキルCT7秒以下",
+        "スキルCT15秒以上",
+        "七聖召喚にいない",
+        "星5",
+        "星4",
+        "爆発のエネルギー50以下",
+        "爆発のエネルギー60",
+        "爆発のエネルギー70",
+        "爆発のエネルギー80以上",
+        "4凸以上",
+        "3凸以下",
+        "1~3月生まれ",
+        "4~6月生まれ",
+        "7~9月生まれ",
+        "10~12月生まれ",
+        "配布経験アリ",
+        "召喚物を呼び出す",
+        "ヒーラー",
+        "シールダー",
+        "バージョン.3以前",
+        "バージョン.4以降",
+        "神の目が腰より下",
+        "神の目が胸より上",
+        "へそ出し",
+        "動物の星座",
+        "動物以外の星座",
+        "膝が見える",
+        "通常攻撃が四段以下",
+        "通常攻撃が五段以上",
+        "攻撃モーションで装備武器以外を使う",
+        "天賦の画面で腕を組む",
+        "天賦の画面で考え込む",
+        "天賦の画面で手を前に出す",
+        "天賦の画面で腰に手を当てる",
+        "アイメイクをしている",
+        "耳飾りをつけている",
+        "王冠使用済み",
+        "好感度10",
+        "一番最近ガチャから引いた",
+        "所属が3文字以下",
+        "マルチメンバーのアイコン",
+        "アイコンで目が隠れる",
+        "天賦倍率に攻撃力以外を使う",
+        "所属が5文字以上",
+        "移動速度or釣りボーナス持ち",
+        "採集関連天賦持ち",
+        "アンバーorリサorガイア",
+        "天賦が5個or7個",
+        "突破ステ物理ダメ",
+        "水中・泳ぎ関連天賦持ち",
+        "恒常星5キャラ",
+        "自由だがレベル1武器"
     ],
     "bosses": [
         "無相の雷",
         "無相の風",
-        "急凍樹",
         "無相の岩",
+        "無相の氷",
+        "無相の炎",
+        "無相の水",
+        "無相の草",
+        "急凍樹",
         "純水精霊",
         "爆炎樹",
-        "エンシェントヴィシャップ",
-        "無相の氷",
+        "エンシェントヴィシャップ・岩",
         "魔偶剣鬼",
-        "無相の炎",
         "恒常からくり陣形",
-        "無相の水",
         "雷音権現",
         "黄金王獣",
         "アビサルヴィシャップの群れ",
         "遺跡サーペント",
         "迅電樹",
-        "マッシュラプトル",
-        "兆載永劫ドレイク",
         "半永久統制マトリックス",
-        "無相の草",
+        "兆載永劫ドレイク",
+        "マッシュラプトル",
         "風蝕ウェネト",
         "深罪の浸礼者",
         "氷風組曲",
@@ -115,13 +656,15 @@
         "千年真珠の海駿",
         "水形タルパ",
         "山隠れの猊獣",
-        "アンドリアス",
+        "北風の狼",
+        "トワリン",
         "タルタリヤ",
         "若陀龍王",
-        "シニョーラ",
-        "雷電",
+        "淑女",
+        "雷電将軍",
         "スカラマシュ",
-        "アペプ",
-        "呑星の鯨"
+        "アペプのオアシス守護者",
+        "呑星の鯨",
+        "召使"
     ]
 }

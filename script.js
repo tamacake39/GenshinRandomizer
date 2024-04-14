@@ -9,60 +9,120 @@ function loadTable() {
     const featuresRadio = document.getElementById("features");
     const elementLimitCheckbox = document.getElementById("elementLimit");
 
+    const tableBody = document.querySelector("#dataTable tbody");
+    tableBody.innerHTML = ""; // テーブルの中身をクリア
+
+    // 選択されたキャラクターを格納する配列
+    let selectedCharacters = [...Array(4)].map(() => 0);
+
+    // ボスをランダムに選択
+    const bosses = data.bosses;
+    const randomBossIndex = Math.floor(Math.random() * bosses.length);
+    let selectedBoss = bosses[randomBossIndex];
+
     if (elementRadio.checked) {
         // 元素縛りの処理
-        console.log("元素縛りが選択されました");
-        // ここに元素縛りの処理を追加
-    } else if (featuresRadio.checked) {
-        // 特徴縛りの処理
-        console.log("特徴縛りが選択されました");
-        // ここに特徴縛りの処理を追加
-    } else {
-        // キャラ縛りの処理
-        const tableBody = document.querySelector("#dataTable tbody");
-        tableBody.innerHTML = ""; // テーブルの中身をクリア
 
-        // キャラクターをランダムに選択
-        const characters = data.characters;
-        const selectedCharacters = [];
+        // 元素（elements）をランダムに選択
+        const list = data.elements;
         for (let i = 0; i < 4; i++) {
-            const randomIndex = Math.floor(Math.random() * characters.length);
-            selectedCharacters.push(characters[randomIndex]);
-            characters.splice(randomIndex, 1); // 選択されたキャラクターをリストから削除
+            const randomIndex = Math.floor(Math.random() * list.length);
+            selectedCharacters[i] = list[randomIndex];
+            // list.splice(randomIndex, 1); // 元素は重複を許可
         }
 
-        // ボスをランダムに選択
-        const bosses = data.bosses;
-        const randomBossIndex = Math.floor(Math.random() * bosses.length);
-        const selectedBoss = bosses[randomBossIndex];
+        // 必須元素の考慮の有無に応じた処理
+        if (elementLimitCheckbox.checked) {
+            // 無相の草の処理
+            if (selectedBoss === "無相の草") {
+                let flag = true;
+                for (let i = 0; i < 4; i++) {
+                    // 選択されたキャラクターに「草」が含まれているかどうか
+                    if (selectedCharacters[i] === "草") {
+                        flag = false;
+                    }
+                }
+                // 条件を満たさないときbitはtrue
+                if (flag) {
+                    selectedCharacters[0] = "草";
+                }
+            }
 
-        // 選択されたキャラクターとボスをテーブルに挿入
-        let count = 1;
-        selectedCharacters.forEach((character) => {
-            const row = document.createElement("tr");
-            row.innerHTML = `
-                    <td>${count++}P</td>
-                    <td>${character}</td>
-                `;
-            tableBody.appendChild(row);
-        });
+            // TODO: 他のボスの処理
+        }
+    } else if (featuresRadio.checked) {
+        // 特徴縛りの処理
 
-        const bossRow = document.createElement("tr");
-        bossRow.innerHTML = `
-                <td>ボス</td>
-                <td>${selectedBoss}</td>
-            `;
-        tableBody.appendChild(bossRow);
-    }
-
-    // 必須元素の考慮の有無に応じた処理
-    if (elementLimitCheckbox.checked) {
-        console.log("必須元素を考慮します");
-        // ここに必須元素を考慮した処理を追加
+        // 特徴（features）をランダムに選択
+        const list = data.features;
+        for (let i = 0; i < 4; i++) {
+            const randomIndex = Math.floor(Math.random() * list.length);
+            selectedCharacters[i] = list[randomIndex];
+            // list.splice(randomIndex, 1); // 元素は重複を許可
+        }
     } else {
-        console.log("必須元素を考慮しません");
-        // ここに必須元素を考慮しない処理を追加
+        // キャラ縛りの処理
+
+        // キャラクター（charactors）をランダムに選択
+        let list = data.characters.concat();
+        list = shuffleArray(list);
+        for (let i = 0; i < 4; i++) {
+            selectedCharacters[i] = list[i];
+            list.splice(i, 1); // 選択されたキャラクターをリストから削除
+        }
+
+        // 必須元素の考慮の有無に応じた処理
+        if (elementLimitCheckbox.checked) {
+            // 無相の草の処理
+            if (selectedBoss === "無相の草") {
+                let flag = true;
+                for (let i = 0; i < 4; i++) {
+                    // 選択されたキャラクターに「草」が含まれているかどうか
+                    if (selectedCharacters[i].elements === "草") {
+                        flag = false;
+                    }
+                }
+                // 条件を満たさないときbitはtrue
+                if (flag) {
+                    // 草を検索して0と入れ替え
+                    selectedCharacters[0] = data.characters.find(
+                        (character) => character.elements === "草"
+                    );
+                }
+            }
+
+            // TODO: 他のボスの処理
+        }
+
+        // オブジェクトをnameに変換
+        selectedCharacters = selectedCharacters.map((character) => {
+            if (character.name === "?") {
+                console.log(character.hoyowiki);
+            }
+            return character.name;
+        });
     }
+
+    // なんとなくシャッフル
+    selectedCharacters = shuffleArray(selectedCharacters);
+
+    // 選択されたキャラクターとボスをテーブルに挿入
+    let count = 1;
+    selectedCharacters.forEach((character) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+                <td>${count++}P</td>
+                <td>${character}</td>
+            `;
+        tableBody.appendChild(row);
+    });
+
+    const bossRow = document.createElement("tr");
+    bossRow.innerHTML = `
+            <td>ボス</td>
+            <td>${selectedBoss}</td>
+        `;
+    tableBody.appendChild(bossRow);
 }
 
 // HTMLが読み込まれたときに実行される初期化関数
@@ -87,3 +147,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     btn.addEventListener("click", loadTable);
     loadTable();
 });
+
+const shuffleArray = (array) => {
+    const cloneArray = [...array];
+    for (let i = cloneArray.length - 1; i >= 0; i--) {
+        let rand = Math.floor(Math.random() * (i + 1));
+        // 配列の要素の順番を入れ替える
+        let tmpStorage = cloneArray[i];
+        cloneArray[i] = cloneArray[rand];
+        cloneArray[rand] = tmpStorage;
+    }
+    return cloneArray;
+};
