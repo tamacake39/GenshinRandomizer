@@ -25,6 +25,7 @@ details summary {
     cursor: pointer;
     padding: 10px 20px;
     background: #ddd;
+    user-select: none;
 }
 details input {
     margin: 10px 20px;
