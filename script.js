@@ -8,6 +8,7 @@ function loadTable() {
     const elementRadio = document.getElementById("element");
     const featuresRadio = document.getElementById("features");
     const elementLimitCheckbox = document.getElementById("elementLimit");
+    const includeLocalLegend = document.getElementById("includeLocalLegend");
 
     const tableBody = document.querySelector("#dataTable tbody");
     tableBody.innerHTML = ""; // テーブルの中身をクリア
@@ -16,7 +17,12 @@ function loadTable() {
     let selectedCharacters = [...Array(4)].map(() => 0);
 
     // ボスをランダムに選択
-    const bosses = data.bosses;
+    let bosses = [];
+    if (includeLocalLegend.checked) {
+        bosses = data.bosses.concat(data.locallegend);
+    } else {
+        bosses = data.bosses.concat();
+    }
     const randomBossIndex = Math.floor(Math.random() * bosses.length);
     let selectedBoss = bosses[randomBossIndex];
 
@@ -24,7 +30,7 @@ function loadTable() {
         // 元素縛りの処理
 
         // 元素（elements）をランダムに選択
-        const list = data.elements;
+        const list = data.elements.concat();
         for (let i = 0; i < 4; i++) {
             const randomIndex = Math.floor(Math.random() * list.length);
             selectedCharacters[i] = list[randomIndex];
@@ -54,7 +60,7 @@ function loadTable() {
         // 特徴縛りの処理
 
         // 特徴（features）をランダムに選択
-        const list = data.features;
+        const list = data.features.concat();
         for (let i = 0; i < 4; i++) {
             const randomIndex = Math.floor(Math.random() * list.length);
             selectedCharacters[i] = list[randomIndex];

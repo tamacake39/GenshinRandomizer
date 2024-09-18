@@ -10,6 +10,8 @@ data.json から読み込んだキャラ情報をランダムに html の table 
 
 ほんへ
 
+詳細設定タブから機能を選択できるはず
+
 -   style.css
 
 見た目にちょこっとコミット
@@ -24,4 +26,4 @@ data.json から読み込んだキャラ情報をランダムに html の table 
 
 ## 最終更新
 
-原神 version 4.6
+原神 version 5.0
