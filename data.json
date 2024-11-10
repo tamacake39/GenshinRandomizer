@@ -557,6 +557,18 @@
             "elements": "岩",
             "weapons": "片手剣",
             "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/6924"
+        },
+        {
+            "name": "オロルン",
+            "elements": "雷",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/7079"
+        },
+        {
+            "name": "チャスカ",
+            "elements": "風",
+            "weapons": "弓",
+            "hoyowiki": "https://wiki.hoyolab.com/pc/genshin/entry/7080"
         }
     ],
     "elements": [
@@ -723,7 +735,8 @@
         "召使",
         "金焔のクク竜",
         "貪食のユムカ竜",
-        "秘源機兵・機巧デバイス"
+        "秘源機兵・機巧デバイス",
+        "深遠なるミミックパピラ"
     ],
     "locallegend": [
         "湖辺のヴィヴィアン<裂け目を鎮圧した湖中の幻霊>",

@@ -26,4 +26,4 @@ data.json から読み込んだキャラ情報をランダムに html の table 
 
 ## 最終更新
 
-原神 version 5.1
+原神 version 5.2

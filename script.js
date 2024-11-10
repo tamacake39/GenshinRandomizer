@@ -103,7 +103,7 @@ function loadTable() {
         // オブジェクトをnameに変換
         selectedCharacters = selectedCharacters.map((character) => {
             if (character.name === "?") {
-                console.log(character.hoyowiki);
+                console.log(character.name);
             }
             return character.name;
         });
@@ -116,9 +116,12 @@ function loadTable() {
     let count = 1;
     selectedCharacters.forEach((character) => {
         const row = document.createElement("tr");
+        const url = data.characters.find(
+            (chara) => chara.name === character
+        ).hoyowiki;
         row.innerHTML = `
                 <td>${count++}P</td>
-                <td>${character}</td>
+                <td><span class="charaURL"><a href="${url}">${character}</a></span></td>
             `;
         tableBody.appendChild(row);
     });

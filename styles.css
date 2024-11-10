@@ -70,6 +70,15 @@ details input {
     width: 50px; /* 最初の列の幅を100pxに設定 */
 }
 
+.charaURL a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.charaURL a:hover {
+    text-decoration: underline;
+}
+
 footer {
     margin-top: 20px;
     text-align: center;
