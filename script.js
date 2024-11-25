@@ -112,19 +112,34 @@ function loadTable() {
     // なんとなくシャッフル
     selectedCharacters = shuffleArray(selectedCharacters);
 
-    // 選択されたキャラクターとボスをテーブルに挿入
     let count = 1;
-    selectedCharacters.forEach((character) => {
-        const row = document.createElement("tr");
-        const url = data.characters.find(
-            (chara) => chara.name === character
-        ).hoyowiki;
-        row.innerHTML = `
+    if (charactorRadio.checked) {
+        // キャラ縛りの処理
+
+        // 選択されたキャラクターとボスをテーブルに挿入
+        selectedCharacters.forEach((character) => {
+            const row = document.createElement("tr");
+            const url = data.characters.find(
+                (chara) => chara.name === character
+            ).hoyowiki;
+            row.innerHTML = `
                 <td>${count++}P</td>
                 <td><span class="charaURL"><a href="${url}">${character}</a></span></td>
             `;
-        tableBody.appendChild(row);
-    });
+            tableBody.appendChild(row);
+        });
+    } else {
+        // 選択されたキャラクターとボスをテーブルに挿入
+        let count = 1;
+        selectedCharacters.forEach((character) => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${count++}P</td>
+                <td>${character}</td>
+            `;
+            tableBody.appendChild(row);
+        });
+    }
 
     const bossRow = document.createElement("tr");
     bossRow.innerHTML = `
